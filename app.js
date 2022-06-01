@@ -2,7 +2,7 @@ let btn = document.querySelector(".btn").addEventListener("click", getAdvice);
 function getAdvice() {
   //   let surah = Math.ceil(Math.random() * 114);
   let ayah = Math.ceil(Math.random() * 6232);
-  fetch(`http://api.alquran.cloud/v1/ayah/${ayah}/quran-uthmani `)
+  fetch(`https://api.alquran.cloud/v1/ayah/${ayah}/quran-uthmani `)
     .then((res) => res.json())
     .then((result) => {
       document.querySelector(".advice-content").innerText = result.data.text;
@@ -13,7 +13,7 @@ function getAdvice() {
     .catch((err) => {
       console.log(`error ${err}`);
     });
-  fetch(`http://api.alquran.cloud/v1/ayah/${ayah}/id.indonesian`)
+  fetch(`https://api.alquran.cloud/v1/ayah/${ayah}/id.indonesian`)
     .then((res) => res.json())
     .then((result) => {
       document.querySelector("#ayah-translation").innerText = result.data.text;
