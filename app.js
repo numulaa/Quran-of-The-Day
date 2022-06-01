@@ -28,5 +28,7 @@ function lightMode() {
   document.querySelector("body").classList.toggle("light-mode");
   document.querySelector(".light-icon").classList.toggle("light-mode");
   document.querySelector(".feedback p").classList.toggle("light-mode-text");
-  document.querySelector(".social a").classList.toggle("light-mode-text");
+  document
+    .querySelectorAll(".social-icon")
+    .forEach((element) => element.classList.toggle("light-mode-text"));
 }

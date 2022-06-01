@@ -107,16 +107,17 @@ h3 {
 .feedback > p {
   font-size: 0.75rem;
 }
-.light-mode-text {
-  color: hsl(217, 19%, 38%);
-}
+
 .social {
   display: flex;
   width: 7rem;
   justify-content: space-around;
   margin: 0 auto;
 }
-.social > a {
+.social-icon {
   text-decoration: none;
   color: hsl(193, 38%, 86%);
+}
+.light-mode-text {
+  color: hsl(217, 19%, 38%);
 }
